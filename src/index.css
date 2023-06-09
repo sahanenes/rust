@@ -36,3 +36,49 @@
   margin: 40px;
   color: #000000;
 }
+
+/* Datagrid */
+
+.App {
+  margin: 0 27px 31px 29px;
+  background-color: 744bfc;
+}
+
+.dx-searchbox {
+  background: #ffffff;
+  border-radius: 39px;
+  width: 380px;
+  height: 42px;
+}
+.dx-searchbox .dx-icon-search {
+  right: 1px;
+  border-radius: 0 10px 10px 0;
+  background-color: #744bfc;
+}
+.dx-searchbox .dx-texteditor-input,
+.dx-searchbox .dx-placeholder:before {
+  padding-left: 8px;
+  padding-right: 68px;
+}
+
+.datagrid {
+  padding: 60px;
+  background: linear-gradient(
+    180deg,
+    #eff2ff -30.56%,
+    rgba(232, 236, 255, 0) 135.85%
+  );
+  border-radius: 6px;
+  margin: 0 29px;
+}
+
+.dx-button-content {
+  background-color: #744bfc;
+  width: 175px;
+  height: 42px;
+  border-radius: 39px;
+  color: white;
+}
+.dx-datagrid-addrow-button .dx-icon-edit-button-addrow {
+  color: white !important;
+}
