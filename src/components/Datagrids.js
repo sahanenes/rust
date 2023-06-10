@@ -11,16 +11,21 @@ import {
   Toolbar,
   Item,
   Editing,
+  StateStoring,
 } from "devextreme-react/data-grid";
 
-import { employees } from "./employees";
+import { employees } from "./newAccounts";
 
 function App() {
   // changing name of the button
   useEffect(() => {
     const addRowButton = document.getElementsByClassName("dx-button-text");
     if (addRowButton.length > 0) {
-      addRowButton[0].innerHTML = "Yeni hesap ekle";
+      if (window.screen.height < 1000) {
+        addRowButton[0].innerHTML = "";
+      } else {
+        addRowButton[0].innerHTML = "Yeni hesap ekle";
+      }
     }
   }, []);
 
@@ -34,6 +39,7 @@ function App() {
         showColumnLines={true}
         rowAlternationEnabled={true}
       >
+        <StateStoring enabled={true} type="localStorage" storageKey="storage" />
         <FilterRow visible={true} applyFilter="onClick" />
         <SearchPanel visible={true} placeholder="Search Objects" width={380} />
         <Paging defaultPageSize={10} />

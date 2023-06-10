@@ -10,7 +10,7 @@ const Navbar = () => {
     <>
       <nav className="nav">
         <img src={logo} alt="logo" />
-        <ul>
+        <ul className="pages">
           <li>
             <a className="page" href="/">
               Hakkımızda
