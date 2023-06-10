@@ -41,7 +41,7 @@
 
 .App {
   margin: 0 27px 31px 29px;
-  background-color: 744bfc;
+  background-color: #744bfc;
 }
 
 .dx-searchbox {
@@ -71,7 +71,7 @@
   border-radius: 6px;
   margin: 0 29px;
 }
-
+/* changing add a row button */
 .dx-button-content {
   background-color: #744bfc;
   width: 175px;
@@ -79,6 +79,35 @@
   border-radius: 39px;
   color: white;
 }
+.dx-button-content:hover {
+  width: 175px;
+  height: 42px;
+  border-radius: 39px;
+  color: black;
+}
+/* changing + sing color to white */
 .dx-datagrid-addrow-button .dx-icon-edit-button-addrow {
   color: white !important;
+}
+/* removing border */
+.dx-button-mode-contained {
+  border-color: #ffffff !important;
+}
+
+.dx-row .dx-row-alt {
+  background-color: blue !important;
+}
+/* removing margin from search panel */
+.dx-datagrid-search-panel {
+  margin: 0 !important;
+  /* border: none !important; */
+}
+/* showing how many rows editing */
+.dx-pager .dx-page-sizes .dx-selection,
+.dx-pager .dx-pages .dx-selection {
+  border-radius: 40px;
+}
+.dx-pager .dx-page-sizes {
+  border: 2px solid grey;
+  border-radius: 40px;
 }
