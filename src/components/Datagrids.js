@@ -41,6 +41,7 @@ function App() {
       >
         <StateStoring enabled={true} type="localStorage" storageKey="storage" />
         <FilterRow visible={true} applyFilter="onClick" />
+
         <SearchPanel visible={true} placeholder="Search Objects" width={380} />
         <Paging defaultPageSize={10} />
         <Pager
@@ -65,7 +66,7 @@ function App() {
             location="before"
             visible={true}
           />
-          <Item name="filterRow" location="before" />
+          <Item name="filterRow" location="before" visible={true} />
         </Toolbar>
       </DataGrid>
     </div>

@@ -1,0 +1,17 @@
+Figmasi verilen task  html,css,react kullarak bir proje olusturulacak .
+datagrid library kullanacagim ve react.js destekli.
+
+Oncelikle react dosyasini kurdum, dosya yapisini hazirladim ve navbar i olusturdum . ilgili yazilari ve fotograflari figma dan alip projeme dahil ettim . 
+daha sonra datagrid kutuphanesini incelemeye basladim . kutuphanenin nasil kullanilacagini anladiktan sonra ilgili kurulumlari yaptim ve datagrid i yukledim.
+
+newAccounts.js dosyasi olusturdum ve verileri buradan cektim.
+
+built-in olarak kutuphanenin search ,yeni hesap ekleme, filtreleme, pagination gibi  ozelliklerini kullanabiliyoruz fakat figma da verilen sekillere gore custom ettim . 
+
+statepersistance kullanabilmek icin statestoring i enable ettim ve sayfa icerisinde yapilan search ,filtreleme vs islemler localstorage kaydoldugu icin sayfa yeniden yuklenildiginde veriler kaybolmuyur.
+
+sayfaya responsive lik kazandirmak icin media query ler yazdim.
+
+karmasik gelebilecek yerler icin yorum satilari koydum . 
+
+
